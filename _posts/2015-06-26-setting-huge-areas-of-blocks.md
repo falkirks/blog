@@ -57,7 +57,7 @@ class BlockSetTask extends PluginTask{
 ```
 
 ### The async set
-An asyncronous set method is by far the most complicated. It requires you to detect which chunks are needed, serialize those chunks, copy them to another thread, unserialize and process them and then inject them into the world again. This makes sense for *MineReset* because *MineReset* has another order of complexity in calculating ratio values. However, for a standard plugin, this may be overkill. The following is modified code from *MineReset*, the full code is [on GitHub](https://github.com/Falkirks/MineReset).
+An asynchronous set method is by far the most complicated. It requires you to detect which chunks are needed, serialize those chunks, copy them to another thread, unserialize and process them and then inject them into the world again. This makes sense for *MineReset* because *MineReset* has another order of complexity in calculating ratio values. However, for a standard plugin, this may be overkill. The following is modified code from *MineReset*, the full code is [on GitHub](https://github.com/Falkirks/MineReset).
 
 #### `Mine`
 
